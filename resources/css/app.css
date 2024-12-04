@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   font-family: 'Roboto', sans-serif;
+   transition: all 0.3s ease;
+   scroll-behavior: smooth;
+}
+
+.login {
+   width: 100%;
+   height: 100vh;
+   background: url('../../public/assets/login-bg.png');
+   background-position: center;
+   background-size: cover;
+}
+
+.bg {
+   background: url('../../public/assets/login-bg.png');
+   width: 400px;
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+}
+
+.bgsignup {
+   background: url('../../public/assets/login-bg.png');
+   width: 400px;
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+}
+
+.mainlogin,
+.mainsignup {
+   background-color: rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(5px);
+}
+
+.signup {
+   width: 100%;
+   height: 100vh;
+   background: url('../../public/assets/login-bg.png');
+   background-position: center;
+   background-size: cover;
+}
+
+.hero {
+   background: url('../../public/assets/hero.png');
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+}
+
+.herotext {
+   background-color: rgba(255, 255, 255, 0.3);
+   padding: 13px;
+   border-radius: 5px;
+}
+
+#card-image {
+   width: 240px;
+   height: 145px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+}
+
+#potoProfile {
+   width: 100px;
+   background-size: cover;
+   background-position: center;
+}
+
+#addgig {
+   border: 1px dashed black;
+}
+
+#cta-category {
+   background-color: white;
+   border: 1px solid #004aad;
+   padding: 10px 20px;
+   border-radius: 50px;
+   color: #004aad;
+}
+
+#cta-category:hover {
+   background-color: #004aad;
+   padding: 10px 20px;
+   border-radius: 50px;
+   color: white;
+}
+
+#gigdetailimage {
+   width: 100%;
+   height: 340px;
+   background-size: cover;
+   background-position: center;
+}

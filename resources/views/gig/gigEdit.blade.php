@@ -64,7 +64,7 @@
                                 this
                                 gig</button>
                         </form>
-                        <a href="#"
+                        <a href="/dashboard/edit/{{ $gig->id }}"
                             class="bg-[#4dff4d] text-white text-[13px] w-[114px] font-medium tracking-wider text-center py-[6px] rounded-[3px]">Update
                             this
                             gig</a>

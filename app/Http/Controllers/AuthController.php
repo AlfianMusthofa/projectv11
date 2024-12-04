@@ -45,8 +45,19 @@ class AuthController extends Controller
          "phone" => ["required"]
       ]);
 
-      User::create($validatedData);
+      $user = User::create($validatedData);
+
+      session([
+         'name' => $user->name,
+         'phone' => $user->phone
+      ]);
 
       return redirect()->intended('/home');
+   }
+
+   function logout()
+   {
+      session()->flush();
+      return redirect('/');
    }
 }

@@ -17,3 +17,8 @@ Route::post('/store', [DashboardController::class, 'store']);
 Route::get('/detail/{id}', [GigController::class, 'index']);
 Route::get('/dashboard/gigEditPage/{id}', [DashboardController::class, 'gigEditPage']);
 Route::delete('/dashboard/delete/{id}', [GigController::class, 'destroy']);
+Route::get('/dashboard/logout', [AuthController::class, 'logout']);
+Route::get('/dashboard/edit/{id}', [DashboardController::class, 'editGig']);
+Route::post('/update/{id}', [DashboardController::class, 'update']);
+Route::get('/dashboard/edituserpage/{id}', [DashboardController::class, 'edituserpage']);
+Route::post('/updateUser/{id}', [DashboardController::class, 'updateUser']);

@@ -73,9 +73,15 @@
                         </div>
                     </div>
 
-                    <a href="/dashboard/userEdit/{{ session('id') }}"
-                        class="text-[13px] border text-center py-[4px] hover:bg-[#00ABE4] hover:text-white">Edit
-                        preferences</a>
+                    <div class="flex items-center gap-[10px]">
+                        <a href="/dashboard/edituserpage/{{ session('id') }}"
+                            class="bg-[#4dff4d] text-white text-[14px] px-[15px] py-[5px] rounded-[3px]">Edit
+                            Profile</a>
+                        <a href="/dashboard/logout"
+                            class="bg-[#004aad] text-white text-[14px] px-[15px] py-[5px] rounded-[3px]">LogOut</a>
+                        <a href="#"
+                            class="bg-[#ff3333] text-white text-[14px] px-[20px] py-[5px] rounded-[3px]">Delete Account</a>
+                    </div>
                 </div>
 
                 {{-- Right --}}
@@ -90,9 +96,7 @@
                                             {{ $gig->name }}</p>
                                         <div class="flex items-center my-[1px] gap-[5px]">
                                             <div>
-                                                <p class="line-clamp-1 text-[13px] text-gray-400">Lorem ipsum, dolor sit
-                                                    amet
-                                                    consectetur adipisicing elit. Qui aut error earum blanditiis iste velit?
+                                                <p class="line-clamp-1 text-[13px] text-gray-400">{{ $gig->description }}
                                                 </p>
                                             </div>
                                         </div>

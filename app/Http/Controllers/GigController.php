@@ -52,15 +52,15 @@ class GigController extends Controller
     */
    public function edit(Gig $gig)
    {
-      //
+      // 
    }
 
    /**
     * Update the specified resource in storage.
     */
-   public function update(UpdateGigRequest $request, Gig $gig)
+   public function update(Request $request, $id)
    {
-      //
+      // $gig = Gig::find($id);
    }
 
    /**

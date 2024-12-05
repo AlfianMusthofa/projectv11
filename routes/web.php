@@ -22,3 +22,4 @@ Route::get('/dashboard/edit/{id}', [DashboardController::class, 'editGig']);
 Route::post('/update/{id}', [DashboardController::class, 'update']);
 Route::get('/dashboard/edituserpage/{id}', [DashboardController::class, 'edituserpage']);
 Route::post('/updateUser/{id}', [DashboardController::class, 'updateUser']);
+Route::get('/allCategory', [HomeController::class, 'allCategory']);

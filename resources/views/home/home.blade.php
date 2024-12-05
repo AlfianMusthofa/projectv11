@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="text-center text-[15px] my-[25px]">
-        <a href="#" id="cta-category">See All Category</a>
+        <a href="/allCategory" id="cta-category">See All Category</a>
     </div>
     @include('components.footer')
 @endsection

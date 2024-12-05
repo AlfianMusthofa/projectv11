@@ -7,6 +7,7 @@
             <div class="col max-w-[600px]">
                 <h3 class="text-[25px] line-clamp-2 font-medium leading-[35px] text-[#222325]">{{ $gig->name }}
                 </h3>
+                <p class="text-[13px] mt-[10px] underline">{{ $gig->category }}</p>
                 <div class="my-[20px] flex items-center gap-[20px]">
                     <img src="{{ asset('assets/pp.jpg') }}" class="w-[90px] rounded-full">
                     <div>

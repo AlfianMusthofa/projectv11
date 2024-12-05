@@ -22,7 +22,7 @@
                     <div>
                         <p class="text-[12px]">Description</p>
                         <textarea name="description" id="" cols="30" rows="10"
-                            class="border w-full text-[13px] p-[7px] mt-[5px] max-h-[110px]" maxlength="180">{{ session('description') }}</textarea>
+                            class="border w-full text-[13px] p-[7px] mt-[5px] max-h-[110px]">{{ session('description') }}</textarea>
                     </div>
                 </div>
             </div>

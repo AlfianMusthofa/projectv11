@@ -48,8 +48,10 @@ class AuthController extends Controller
       $user = User::create($validatedData);
 
       session([
+         'id' => $user->id,
          'name' => $user->name,
-         'phone' => $user->phone
+         'phone' => $user->phone,
+         'description' => $user->description
       ]);
 
       return redirect()->intended('/home');

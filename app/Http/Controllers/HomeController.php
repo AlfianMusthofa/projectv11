@@ -29,6 +29,32 @@ class HomeController extends Controller
       ]);
    }
 
+   function allCategory()
+   {
+      $tekstranslation = "Teks Translation";
+      $graphic = "Graphic & Desain";
+      $programming = "Programming & Tech";
+      $videos = "Video & Animation";
+      $music = "Music & Audio";
+      $finance = "Finance";
+
+      $teks_translation = Gig::where('category', $tekstranslation)->get();
+      $gd = Gig::where('category', $graphic)->get();
+      $code = Gig::where('category', $programming)->get();
+      $video = Gig::where('category', $videos)->get();
+      $musics = Gig::where('category', $music)->get();
+      $finances = Gig::where('category', $finance)->get();
+
+      return view('home.allCategory', [
+         "tekstranslations" => $teks_translation,
+         "grapicsDesign" => $gd,
+         "codes" => $code,
+         "videos" => $video,
+         "musics" => $musics,
+         "finances" => $finances
+      ]);
+   }
+
    /**
     * Show the form for creating a new resource.
     */

@@ -40,7 +40,15 @@
                     {{-- Description --}}
                     <div class="border p-[15px] bg-white">
                         <p class="text-[14px] font-semibold">Description</p>
-                        <p class="text-[13px] text-gray-400 mt-[10px] italic line-clamp-6">{{ session('description') }}</p>
+                        {{-- <p class="text-[13px] text-gray-400 mt-[10px] italic line-clamp-6">{{ session('description') }}</p> --}}
+                        @if (session('description'))
+                            <p class="text-[13px] mt-[10px] text-justify line-clamp-6 text-gray-400">
+                                {{ session('description') }}</p>
+                        @else
+                            <p class="text-[13px] text-gray-400 mt-[10px] italic">No description available. Please add your
+                                description in
+                                your profile.</p>
+                        @endif
                     </div>
 
                     {{-- Languages --}}

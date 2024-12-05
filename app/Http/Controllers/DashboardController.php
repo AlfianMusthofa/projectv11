@@ -82,9 +82,9 @@ class DashboardController extends Controller
          $gig->user_description = session('description')
       ];
 
-      ddd($request);
+      // ddd($request);
 
-      // $gig->save();
+      $gig->save();
 
       return redirect('/dashboard');
    }

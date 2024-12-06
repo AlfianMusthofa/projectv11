@@ -6,6 +6,7 @@ use App\Models\Home;
 use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
 use App\Models\Gig;
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {

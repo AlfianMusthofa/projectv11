@@ -14,7 +14,11 @@
             @foreach ($grapicsDesign as $gig)
                 <a href="/detail/{{ $gig->id }}">
                     <div class="max-w-[240px]">
-                        <img src="{{ asset('storage/' . $gig['image']) }}" id="card-image">
+                        @if ($gig['image'])
+                            <img src="{{ asset('storage/' . $gig['image']) }}" id="card-image">
+                        @else
+                            <img src="{{ asset('assets/bgd (1).jpg') }}" id="card-image">
+                        @endif
                         <div class="p-[7px] mt-[5px]">
                             <p class="text-[15px] font-medium line-clamp-2 text-[#200000]">
                                 {{ $gig->name }}</p>
@@ -37,7 +41,11 @@
             @foreach ($tekstranslations as $gig)
                 <a href="/detail/{{ $gig->id }}">
                     <div class="max-w-[240px]">
-                        <img src="{{ asset('storage/' . $gig['image']) }}" id="card-image">
+                        @if ($gig['image'])
+                            <img src="{{ asset('storage/' . $gig['image']) }}" id="card-image">
+                        @else
+                            <img src="{{ asset('assets/bgd (1).jpg') }}" id="card-image">
+                        @endif
                         <div class="p-[7px] mt-[5px]">
                             <p class="text-[15px] font-medium line-clamp-2 text-[#200000]">
                                 {{ $gig->name }}</p>
@@ -60,7 +68,11 @@
             @foreach ($codes as $gig)
                 <a href="/detail/{{ $gig->id }}">
                     <div class="max-w-[240px]">
-                        <img src="{{ asset('storage/' . $gig['image']) }}" id="card-image">
+                        @if ($gig['image'])
+                            <img src="{{ asset('storage/' . $gig['image']) }}" id="card-image">
+                        @else
+                            <img src="{{ asset('assets/bgd (3).jpg') }}" id="card-image">
+                        @endif
                         <div class="p-[7px] mt-[5px]">
                             <p class="text-[15px] font-medium line-clamp-2 text-[#200000]">
                                 {{ $gig->name }}</p>

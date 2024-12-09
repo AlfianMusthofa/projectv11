@@ -9,10 +9,8 @@
     </div>
     <div class="container mx-auto flex items-center justify-between py-[40px]">
         <div class="col text-[14px] w-[600px]">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam similique possimus deserunt facere
-                impedit magni fuga recusandae! Voluptatem repellendus provident asperiores saepe incidunt repudiandae sequi
-                culpa laborum id quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quisquam quod, nisi
-                sequi earum dolorum assumenda eligendi deleniti reprehenderit distinctio?</p>
+            <p>Selamat datang di JasaKu, platform terpercaya untuk memenuhi berbagai kebutuhan jasa Anda. Kami hadir untuk
+                mempermudah hidup Anda dengan menyediakan beragam layanan yang dapat dipesan dengan mudah dan cepat.</p>
         </div>
         <div class="col flex items-center gap-[15px]">
             <img src="{{ asset('assets/icons/youtube.png') }}" class="w-[35px]">

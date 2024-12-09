@@ -47,7 +47,7 @@
                             <p class="text-[14px] font-medium text-[#404145]">{{ $gig->duration }} delivery</p>
                         </div>
                         <div class="flex w-[100%] mt-[20px]">
-                            <a href="#"
+                            <a href="https://wa.me/{{ $gig->phone }}"
                                 class="w-full text-[15px] text-center py-[9px] tracking-wider font-medium bg-[#000000] text-white rounded-[3px]">Continue</a>
                         </div>
                     </div>
